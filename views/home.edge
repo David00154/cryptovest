@@ -7,7 +7,7 @@
     <section class="pb-[340px] text-center overflow-x-hidden"
         style="background-size: cover; background-image: url('https://static.cdnroute.io/files/storage/public/5d/b0/6062ee8b91f4c5g8g3/1440@1x.png');
         background-repeat: no-repeat; background-position: 50% 0px; color:rgb(255, 255, 255); background-color: rgb(7, 7, 61);">
-        <div class="max-w-[990px] mx-auto p-4">
+        <div class="max-w-[990px] mx-auto p-4 mt-8">
             <h1 class="text-white md:text-left font-bold md:text-[40px] text-[24px]">Trade Stocks, Forex,
                 <br>and Crypto
             </h1>
@@ -25,6 +25,7 @@
             </div>
         </div>
     </section>
+    {{--  Chart  --}}
     <section class="-mt-[310px] mx-auto max-w-[990px]">
         <div class="tradingview-widget-container" style="width: 100%;">
             <iframe scrolling="no" allowtransparency="true" style="box-sizing: border-box; height: 400px; width: 100%;"
@@ -37,6 +38,46 @@
             Information regarding past performance is not a reliable indicator of future performance. Leverage
             restrictions may apply depending on client's circumstances and/or jurisdiction.
         </p>
+    </section>
+    <section class="bg-[#101112] mt-10 md:py-[8em] px-0 py-[4em]">
+        <div class="max-w-[990px] mx-auto w-full flex md:flex-row flex-col gap-5 px-5">
+            <div class="flex flex-col gap-8 w-[100%]">
+                <h2 class="text-white text-[35px] font-semibold leading-tight capitalize">
+                    Save time. Get higher return.
+                    Multiply wealth.</h2>
+                <p class="text-[#FFFFFFD4] text-[14px]">Investing can be intimidating, especially for beginners.
+                    Sometimes managing
+                    an investment is daunting due to the uncertainty and volatility of the market, as well as the time
+                    investment needed to be successful.</p>
+                <div class="flex md:flex-row flex-col w-full items-center">
+                    <div
+                        class="md:w-auto w-full bg-[#212224] m-[0.5em_0.5em_0.5em_0.5em] p-[1em_1em_2em_1em] rounded-md">
+                        @!component('components.lockicon')
+                        <h2 class="text-white text-[1rem] font-medium w-full mt-4">
+                            Secure Service
+                        </h2>
+                    </div>
+                    <div
+                        class="md:w-auto w-full bg-[#212224] m-[0.5em_0.5em_0.5em_0.5em] p-[1em_1em_2em_1em] rounded-md">
+                        @!component('components.papermoneyicon')
+                        <h2 class="text-white text-[1rem] font-medium w-full mt-4">
+                            Multi Currency Support
+                        </h2>
+                    </div>
+                    <div
+                        class="md:w-auto w-full bg-[#212224] m-[0.5em_0.5em_0.5em_0.5em] p-[1em_1em_2em_1em] rounded-md">
+                        @!component('components.coin')
+                        <h2 class="text-white text-[1rem] font-medium w-full mt-4">
+                            Currency Exchange
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <img src="/images/image1.png" alt="">
+        </div>
+    </section>
+    <section class="h-[60px]">
+        <h1>R</h1>
     </section>
 </main>
 @endsection
