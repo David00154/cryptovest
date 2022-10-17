@@ -1,0 +1,39 @@
+{
+	"name": "cryptovest",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"dev": "concurrently \"nodemon server.js\" \"encore dev-server\" --kill-others-on-fail",
+		"build": "encore prod",
+		"start": "node server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@forkjs/group-router": "^1.0.5",
+		"@prisma/client": "^4.4.0",
+		"autoprefixer": "^10.4.12",
+		"connect": "^3.7.0",
+		"connect-mysql": "^4.0.0",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"express-edge": "^2.0.2",
+		"express-session": "^1.17.3",
+		"express-validator": "^6.14.2",
+		"nodemailer": "^6.8.0",
+		"passport": "^0.6.0",
+		"passport-local": "^1.0.0",
+		"postcss": "^8.4.18",
+		"prisma": "^4.4.0",
+		"tailwindcss": "^3.1.8"
+	},
+	"devDependencies": {
+		"@symfony/webpack-encore": "^4.0.0",
+		"concurrently": "^7.4.0",
+		"nodemon": "^2.0.20",
+		"postcss-loader": "^7.0.1"
+	}
+}

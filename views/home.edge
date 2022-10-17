@@ -1,0 +1,42 @@
+@layout('layouts.base')
+@section('body')
+@set('title', 'Forex, Stocks, ETFs & Options Trading | Cryptovest - online trading platform - Log in or Sign Up')
+<main>
+    @include('partials.header')
+    {{--  Hero section  --}}
+    <section class="pb-[340px] text-center overflow-x-hidden"
+        style="background-size: cover; background-image: url('https://static.cdnroute.io/files/storage/public/5d/b0/6062ee8b91f4c5g8g3/1440@1x.png');
+        background-repeat: no-repeat; background-position: 50% 0px; color:rgb(255, 255, 255); background-color: rgb(7, 7, 61);">
+        <div class="max-w-[990px] mx-auto p-4">
+            <h1 class="text-white md:text-left font-bold md:text-[40px] text-[24px]">Trade Stocks, Forex,
+                <br>and Crypto
+            </h1>
+            <div class="flex md:flex-row flex-col gap-5 mt-5 items-center">
+                <a href="#" class="font-medium bg-orangeMain text-white text-center px-5 py-3 w-[200px] rounded">Get
+                    Started</a>
+                <a href="#"
+                    class="font-medium bg-transparent border border-white text-white text-center px-5 py-3 w-[200px] rounded hover:bg-white hover:text-darkMain">View
+                    Our Pricing</a>
+            </div>
+            <div class="mt-5 flex gap-5 items-center mx-auto">
+                @!component('components.appleicon')
+                @!component('components.windowsicon')
+                @!component('components.chromeicon')
+            </div>
+        </div>
+    </section>
+    <section class="-mt-[310px] mx-auto max-w-[990px]">
+        <div class="tradingview-widget-container" style="width: 100%;">
+            <iframe scrolling="no" allowtransparency="true" style="box-sizing: border-box; height: 400px; width: 100%;"
+                src="https://s.tradingview.com/embed-widget/forex-cross-rates/?locale=en#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A400%2C%22currencies%22%3A%5B%22EUR%22%2C%22USD%22%2C%22JPY%22%2C%22GBP%22%2C%22CHF%22%2C%22AUD%22%2C%22CAD%22%2C%22NZD%22%2C%22CNY%22%5D%2C%22isTransparent%22%3Afalse%2C%22colorTheme%22%3A%22light%22%2C%22utm_source%22%3A%22cryptocapital-fx.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22forex-cross-rates%22%7D"
+                frameborder="0"></iframe>
+
+        </div>
+        <p
+            class="inline-block text-[11px] mt-4 text-center text-[rgb(155,_155,_155)] font-medium md:max-w-[1120px] max-w-[1022px] px-[16px] md:px-[65px] mx-auto py-0">
+            Information regarding past performance is not a reliable indicator of future performance. Leverage
+            restrictions may apply depending on client's circumstances and/or jurisdiction.
+        </p>
+    </section>
+</main>
+@endsection
